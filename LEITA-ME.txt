@@ -1,0 +1,7 @@
+Instalações do projeto
+
+npm install
+npm install react-scripts --force
+
+JSON-SERVE
+npm i json-server
