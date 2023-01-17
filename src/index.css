@@ -1,0 +1,13 @@
+body {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 500px;
+    background-color: #1a1a1a;
+    padding-top: 50px;
+    color: #7B68EE;
+}
+
+form {
+    margin: 0 auto;
+    max-width: 40%;
+}
