@@ -16,6 +16,7 @@ import Button from '@mui/material/Button';
 import { NavLink, useNavigate } from 'react-router-dom';
 import { useAuthValue } from '../context/AuthContext';
 import { useAuthentication } from '../hooks/useAuthentication';
+import iconRocket from './../assets/icon.png'
 
 function BarraTopo(props) {
     const drawerWidth = 240;
@@ -38,7 +39,7 @@ function BarraTopo(props) {
 
     return (
         <Box sx={{ overflow: 'hidden', position: 'fixed' }}>
-            <AppBar sx={{ backgroundColor: '#1a1a1a' }}>
+            <AppBar sx={{ backgroundColor: '#06101f' }}>
                 <Toolbar>
                     <Typography
                         variant="h6"
@@ -46,7 +47,7 @@ function BarraTopo(props) {
                         sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
                     >
                         <NavLink className='brand' to="/">
-                            Guardians
+                        <img src={iconRocket} width={75} height={75} alt="Logo" />
                         </NavLink>
                     </Typography>
                     <Box sx={{ display: { xs: 'none', sm: 'block' } }}>

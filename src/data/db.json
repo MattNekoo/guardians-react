@@ -7,19 +7,22 @@
       "publisher": "Microsoft",
       "year": "2019",
       "dsc_jogo": "qualquer coisa",
-      "gen": "8"
+      "gen": "8",
+      "img": "./../assets/control.jpg"
     },
     {
       "id": 2,
       "game": "Spiritfarer",
       "developer": "Thunder Lotus Games",
-      "year": "2020"
+      "year": "2020",
+      "img": "./../assets/alan-wake.jpg"
     },
     {
       "id": 3,
       "game": "Death's Door",
       "developer": "Acid Nerve",
-      "year": "2021"
+      "year": "2021",
+      "img": "./../assets/alan-wake.jpg"
     },
     {
       "id": 4,
@@ -27,7 +30,8 @@
       "developer": "Naughty Dog",
       "year": "2010",
       "dsc_jogo": "qualquer coisa",
-      "gen": "7"
+      "gen": "7",
+      "img": "./../assets/alan-wake.jpg"
     },
     {
       "id": 5,
@@ -35,7 +39,8 @@
       "developer": "Remedy Entertainment",
       "year": "2011",
       "dsc_jogo": "qualquer coisa",
-      "gen": "7"
+      "gen": "7",
+      "img": "./../assets/alan-wake.jpg"
     },
     {
       "game": "Dino Crisis",
@@ -43,7 +48,8 @@
       "year": "1999",
       "dsc_jogo": "Dino em Crisis",
       "publisher": "Capcom",
-      "id": 6
+      "id": 6,
+      "img": "./../assets/alan-wake.jpg"
     }
   ]
 }

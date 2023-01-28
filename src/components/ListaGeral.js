@@ -2,7 +2,7 @@ import React from 'react'
 import ListarJogos from './ListarJogos'
 import { useFetch } from "../hooks/useFetch"
 import { BrowserRouter, Link, Route, Routes } from 'react-router-dom';
-import { Button, Card, CardActionArea, CardActions, CardContent, Typography } from '@mui/material';
+import { Button, Card, CardActionArea, CardActions, CardContent, CardMedia, Typography } from '@mui/material';
 
 const ListaGeral = () => {
     const url = "http://localhost:8000/games"
@@ -13,21 +13,24 @@ const ListaGeral = () => {
             {loading && <p>Carregando jogos...</p>}
             {error && <p>{error}</p>}
             <Typography gutterBottom sx={{ marginTop: '20px' }} variant="h2"></Typography>
-            <Card sx={{ backgroundColor: '#3e4444' }}>
+            <Card>
                 {games && games.map((g) => (
-                    <CardContent sx={{ float: 'left', width: '20%', padding: '15px' }}>
+                    <CardContent
+                        sx={{
+                            float: 'left',
+                            margin: '10px',
+                            width: '30%',
+                            borderRadius: '15px',
+                            backgroundColor: 'green',
+                        }}>
                         <CardActionArea key={g.id}>
-                            {/* <CardMedia
-                        component="img"
-                        height="140"
-                        alt="green iguana"
-                    /> */}
                             <Link style={{ textDecoration: 'none' }} to={`/listar/${g.id}`}>
-                                <CardContent >
-                                    <Typography gutterBottom color='#7B68EE' variant="h4" component="div">
-                                        {g.game}
-                                    </Typography>
-                                </CardContent>
+                            <CardMedia
+                                style={{ height: 0, paddingTop: '100%' }}
+                                image={require('./../assets/icon.png')}
+                                height="50"
+                                alt="icon"
+                            />
                             </Link>
                         </CardActionArea>
                     </CardContent>

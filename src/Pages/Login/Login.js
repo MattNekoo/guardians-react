@@ -29,8 +29,6 @@ const Login = () => {
 
     const res = await login(user);
     console.log(res, 'deu bom')
-    // const addedGames = await res.json()
-    // setGames((prevGames) => [...prevGames, addedGames]);
 
     setPassword("");
     setEmail("");
@@ -45,7 +43,6 @@ const Login = () => {
   return (
     <>
       <Typography gutterBottom sx={{ marginTop: '20px' }} variant="h2">Entrar</Typography>
-      <Typography gutterBottom >Faça o Login</Typography>
       <div className='Form'>
         <form onSubmit={handleSubmit}>
           <Typography>Login:</Typography>
@@ -53,7 +50,7 @@ const Login = () => {
             fullWidth
             type="email"
             name="email"
-            inputProps={{ style: { backgroundColor:'#3e4444' } }}
+            inputProps={{ style: { backgroundColor:'#3e4444', borderRadius: '30px'} }}
             value={email} required
             onChange={(e) => setEmail(e.target.value)}
             id="email"
@@ -64,7 +61,7 @@ const Login = () => {
             fullWidth
             type="password"
             name="password"
-            inputProps={{ style: { backgroundColor:'#3e4444' } }}
+            inputProps={{ style: { backgroundColor:'#3e4444', borderRadius: '30px'} }}
             value={password}
             required
             onChange={(e) => setPassword(e.target.value)}
@@ -73,16 +70,16 @@ const Login = () => {
             variant="outlined" />
           {!loading && <Button className='btn' type="submit"
             value="cadastrar" color="primary"
-            size="small" variant="contained"
-            sx={{ marginTop: '10px', color: 'white', backgroundColor: '#7B68EE' }}>Entrar</Button>}
+            size="small" variant="outlined"
+            sx={{ marginTop: '10px', color: 'white', backgroundColor: '#7B68EE', borderRadius: '30px' }}>Entrar</Button>}
           {loading && <Button disabled className='btn' type="submit"
             value="cadastrar" color="primary"
-            size="small" variant="contained"
-            sx={{ marginTop: '10px', color: 'white', backgroundColor: '#7B68EE' }}>Aguarde...</Button>}
+            size="small" variant="outlined"
+            sx={{ marginTop: '10px', color: 'white', backgroundColor: '#7B68EE', borderRadius: '30px' }}>Aguarde...</Button>}
           <Button type="clear" value="limpar"
             color="primary" size="small"
-            variant="contained"
-            sx={{ marginLeft: '5px', marginTop: '10px', color: 'white', backgroundColor: '#7B68EE' }} >Limpar</Button>
+            variant="outlined"
+            sx={{ marginLeft: '5px', marginTop: '10px', color: 'white', backgroundColor: '#7B68EE', borderRadius: '30px' }} >Limpar</Button>
           {error &&
             <Typography component="p" className='error'>
               {error}
