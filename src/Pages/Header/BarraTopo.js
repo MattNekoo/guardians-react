@@ -14,9 +14,10 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import { NavLink, useNavigate } from 'react-router-dom';
-import { useAuthValue } from '../context/AuthContext';
-import { useAuthentication } from '../hooks/useAuthentication';
-import iconRocket from './../assets/icon.png'
+import { useAuthValue } from '../../context/AuthContext';
+import { useAuthentication } from '../../hooks/useAuthentication';
+import iconRocket from '../../assets/icon.png'
+import './BarraTopo.css';
 
 function BarraTopo(props) {
     const drawerWidth = 240;

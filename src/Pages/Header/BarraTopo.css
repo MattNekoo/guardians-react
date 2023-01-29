@@ -1,0 +1,37 @@
+.BarraTopo {
+  padding: .1em 1em;
+  align-items: center;
+  background-color: inherit;
+  list-style: none;
+  color: white;
+  text-decoration: none;
+  font-size: 12px;
+  top: auto;
+  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
+}
+
+/* Change color on hover */
+.BarraTopo:hover {
+  color: #7B68EE;
+}
+
+.active {
+  /* background-color: #000; */
+  color: #7B68EE;
+}
+
+.brand {
+  font-size: 1.2em;
+  text-transform: uppercase;
+  font-weight: 900;
+  text-decoration: none;
+  align-items: flex-start;
+  color: #7B68EE;
+}
+
+@media screen and (max-width: 400px) {
+  .BarraTopo a {
+      float: none;
+      width: 100%;
+  }
+}

@@ -1,9 +1,9 @@
 import { Typography } from '@mui/material';
 import React, { useEffect, useRef, useState } from 'react'
 
-import '../components/Adivinhe.css';
-import { useCounterContext } from '../hooks/useCounterContext';
-import { useFetch } from "../hooks/useFetch"
+import './Adivinhe.css';
+import { useCounterContext } from '../../hooks/useCounterContext';
+import { useFetch } from "../../hooks/useFetch"
 const url = "http://localhost:8000/games"
 
 
@@ -127,7 +127,7 @@ const Adivinhe = () => {
             {/* <p className='points'>
                 <span>Pontuação: {score}</span>
             </p> */}
-            <Typography gutterBottom sx={{ marginTop: '20px', textAlign:'center' }} variant="h2">Joguinho de Adivinhar</Typography>
+            <Typography gutterBottom sx={{ marginTop: '20px', textAlign: 'center' }} variant="h2">Joguinho de Adivinhar</Typography>
 
             <Typography gutterBottom variant="h6" component="div">
                 Valor do Contador para Context: {counter}

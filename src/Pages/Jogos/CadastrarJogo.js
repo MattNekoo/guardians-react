@@ -1,6 +1,6 @@
 import { Button, MenuItem, Select, TextField, Typography } from '@mui/material';
 import { useState } from 'react'
-import { useFetch } from "../hooks/useFetch"
+import { useFetch } from "../../hooks/useFetch"
 
 const CadastrarJogo = () => {
 
@@ -46,9 +46,9 @@ const CadastrarJogo = () => {
 
 
   return (
-    <div>
-      <Typography gutterBottom sx={{ marginTop: '20px' }} variant="h2">Cadastrar Jogo no BD</Typography>
-      <div className='Form'>
+    <div className='Form'>
+      <Typography variant="h2">Cadastrar Jogo no BD</Typography>
+      <div>
         <form onSubmit={handleSubmit}>
           <Typography>Nome do Jogo:</Typography>
           <TextField fullWidth type="text" inputProps={{ style: { backgroundColor:'#3e4444' } }} name="nomejogo" required value={game} onChange={(e) => setGame(e.target.value)} id="outlined-basic" variant="outlined" />

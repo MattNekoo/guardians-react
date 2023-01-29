@@ -1,0 +1,22 @@
+.app-footer {
+    background: #dcdcdc;
+    position: fixed;
+    text-align: center;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+  }
+
+  /* .footer {
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+} */
+  
+  .app-footer__message {
+    color: #595959;
+    font-family: sans-serif;
+  }
+  

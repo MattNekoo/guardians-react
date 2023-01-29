@@ -1,6 +1,6 @@
 import { Typography } from '@mui/material';
 import { useParams } from 'react-router-dom';
-import { useFetch } from '../hooks/useFetch';
+import { useFetch } from '../../hooks/useFetch';
 
 const ListarJogos = () => {
 

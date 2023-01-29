@@ -1,0 +1,22 @@
+.BarraCadastro button {
+    float: left;
+    display: block;
+    color: #7B68EE;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    background-color: #595959;
+    margin: auto;
+}
+
+.BarraCadastro button:hover {
+    background-color: #595959;
+    color: #7B68EE;
+}
+
+form {
+    margin: 0 auto;
+    max-width: 40%;
+    text-align: center;
+
+}

@@ -1,9 +1,18 @@
 //components
-import Cadastro from "./components/Cadastro";
-import Inicio from "./components/Inicio";
-import BarraTopo from "./components/BarraTopo";
-import ListaGeral from "./components/ListaGeral";
-import Adivinhe from "./components/Adivinhe";
+import Cadastro from "./Pages/Jogos/Cadastro";
+import Inicio from "./Pages/Inicio/Inicio";
+import BarraTopo from "./Pages/Header/BarraTopo";
+import ListaGeral from "./Pages/Jogos/ListaGeral";
+import Adivinhe from "./Pages/Adivinhe/Adivinhe";
+import ListarJogos from "./Pages/Jogos/ListarJogos";
+import NotFound from "./components/NotFound";
+import SearchForm from "./components/SearchForm";
+import BarraRodape from "./Pages/Footer/BarraRodape";
+import Login from "./Pages/Login/Login";
+import Register from "./Pages/Register/Register";
+import CreatePost from "./Pages/CreatePost/CreatePost";
+import Dashboard from "./Pages/Dashboard/Dashboard";
+import About from "./Pages/About/About";
 
 import { Route, Routes, BrowserRouter, Navigate } from "react-router-dom";
 
@@ -16,16 +25,7 @@ import { useState, useEffect } from "react";
 import { useAuthentication } from "./hooks/useAuthentication";
 
 //css
-import './index.css';
-import ListarJogos from "./components/ListarJogos";
-import NotFound from "./components/NotFound";
-import SearchForm from "./components/SearchForm";
-import BarraRodape from "./components/BarraRodape";
-import Login from "./Pages/Login/Login";
-import Register from "./Pages/Register/Register";
-import CreatePost from "./Pages/CreatePost/CreatePost";
-import Dashboard from "./Pages/Dashboard/Dashboard";
-import About from "./Pages/About/About";
+import './App.css';
 
 function App() {
 
