@@ -47,7 +47,7 @@ function BarraTopo(props) {
                         component="div"
                         sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
                     >
-                        <NavLink className='brand' to="/">
+                        <NavLink to="/">
                         <img src={iconRocket} width={75} height={75} alt="Logo" />
                         </NavLink>
                     </Typography>

@@ -11,7 +11,7 @@ const Inicio = () => {
     return (
         <div>
             {/* <Zerados /> */}
-            {posts && posts.map((post) => <PostDetail key={post.id} post={post} />)}
+            {posts && posts.map((post) => <PostDetail key={post.id} post={post}  />)}
         </div>
     )
 }
