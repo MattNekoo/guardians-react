@@ -6,7 +6,6 @@ import reportWebVitals from './reportWebVitals';
 
 //context
 import { CounterContextProvider } from './context/CounterContext';
-import { AuthProvider } from './context/AuthContext';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

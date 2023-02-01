@@ -25,36 +25,34 @@ const EditarJogo = ({ game }) => {
     }
 
     return (
-        <div>
-            <Typography gutterBottom sx={{ marginTop: '20px' }} variant="h2">Editar Jogo no BD</Typography>
-            <div className='Form'>
-                <form onSubmit={handleSubmit}>
-                    <Typography>Nome do Jogo:</Typography>
-                    <TextField fullWidth type="text" name="nomejogo" required inputProps={{ style: { backgroundColor:'#3e4444' } }} value={name} onChange={(e) => setName(e.target.value)} id="outlined-basic" variant="outlined" />
-                    <Typography>Developer:</Typography>
-                    <TextField fullWidth type="text" name="developer" required inputProps={{ style: { backgroundColor:'#3e4444' } }} value={dev} onChange={(e) => setDev(e.target.value)} id="outlined-basic" variant="outlined" />
-                    <Typography>Publicadora:</Typography>
-                    <TextField fullWidth type="text" name="publicadora" required inputProps={{ style: { backgroundColor:'#3e4444' } }} value={pub} onChange={(e) => setPub(e.target.value)} id="outlined-basic" variant="outlined" />
-                    <Typography>Data de Lançamento:</Typography>
-                    <TextField fullWidth type="number" name="dt_lancamento" required inputProps={{ style: { backgroundColor:'#3e4444' } }} value={year} onChange={(e) => setYear(e.target.value)} id="outlined-basic" variant="outlined" />
-                    <Typography>Geração:
-                        <Select
-                            fullWidth
-                            labelId="gen"
-                            id="gen"
-                            value={gen}
-                            label="Geração"
-                            onChange={(e) => setGen(e.target.value)}
-                        >
-                            <MenuItem value={7}>7ª Gen</MenuItem>
-                            <MenuItem value={8}>8ª Gen</MenuItem>
-                            <MenuItem value={9}>9ª Gen</MenuItem>
-                        </Select>
-                    </Typography>
-                    <Button type="submit" value="enviar" color="primary" size="small" variant="outlined" sx={{ marginTop: '10px', color: 'white', backgroundColor: '#7B68EE' }} >Editar</Button>
-                    <Button type="clear" value="limpar" color="primary" size="small" variant="outlined" sx={{ marginLeft: '5px', marginTop: '10px', color: 'white', backgroundColor: '#7B68EE' }} >Limpar</Button>
-                </form>
-            </div>
+        <div className='Form'>
+            <Typography variant="h2">Editar Jogo no BD</Typography>
+            <form onSubmit={handleSubmit}>
+                <Typography>Nome do Jogo:</Typography>
+                <TextField fullWidth type="text" name="nomejogo" required inputProps={{ style: { backgroundColor: '#3e4444' } }} value={name} onChange={(e) => setName(e.target.value)} id="outlined-basic" variant="outlined" />
+                <Typography>Developer:</Typography>
+                <TextField fullWidth type="text" name="developer" required inputProps={{ style: { backgroundColor: '#3e4444' } }} value={dev} onChange={(e) => setDev(e.target.value)} id="outlined-basic" variant="outlined" />
+                <Typography>Publicadora:</Typography>
+                <TextField fullWidth type="text" name="publicadora" required inputProps={{ style: { backgroundColor: '#3e4444' } }} value={pub} onChange={(e) => setPub(e.target.value)} id="outlined-basic" variant="outlined" />
+                <Typography>Data de Lançamento:</Typography>
+                <TextField fullWidth type="number" name="dt_lancamento" required inputProps={{ style: { backgroundColor: '#3e4444' } }} value={year} onChange={(e) => setYear(e.target.value)} id="outlined-basic" variant="outlined" />
+                <Typography>Geração:
+                    <Select
+                        fullWidth
+                        labelId="gen"
+                        id="gen"
+                        value={gen}
+                        label="Geração"
+                        onChange={(e) => setGen(e.target.value)}
+                    >
+                        <MenuItem value={7}>7ª Gen</MenuItem>
+                        <MenuItem value={8}>8ª Gen</MenuItem>
+                        <MenuItem value={9}>9ª Gen</MenuItem>
+                    </Select>
+                </Typography>
+                <Button type="submit" value="enviar" color="primary" size="small" variant="outlined" sx={{ marginTop: '10px', color: 'white', backgroundColor: '#7B68EE' }} >Editar</Button>
+                <Button type="clear" value="limpar" color="primary" size="small" variant="outlined" sx={{ marginLeft: '5px', marginTop: '10px', color: 'white', backgroundColor: '#7B68EE' }} >Limpar</Button>
+            </form>
         </div>
 
         // {/* </div>

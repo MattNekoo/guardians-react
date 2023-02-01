@@ -2,12 +2,45 @@ body {
     margin: 0;
     padding: 0;
     padding-bottom: 500px;
-    background-color: #1a1a1a;
-    padding-top: 50px;
+    background-color: #06101f;
+    padding-top: 60px;
+}
+
+h2 {
     color: #7B68EE;
 }
 
-form {
-    margin: 0 auto;
-    max-width: 40%;
+.game-table-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.game-table-list li {
+    padding: 10px;
+    border-radius: 5px;
+    list-style: none;
+    background: #595959;
+    border-bottom: 1px solid #7B68EE;
+}
+
+/* Create three equal columns that floats next to each other */
+.game-table-header {
+    float: left;
+    width: 20%;
+    padding: 15px;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+    .game-table-header {
+        width: 100%;
+    }
+}
+
+h2 {
+    text-align: center;
+    color: '#7B68EE';
 }

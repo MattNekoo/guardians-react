@@ -59,7 +59,7 @@ const CreatePost = () => {
 
   return (
     <>
-      <Typography gutterBottom color='#7B68EE' sx={{ marginTop: '20px' }} variant="h2">Cadastrar Post</Typography>
+      <Typography gutterBottom sx={{ marginTop: '20px' }} variant="h2">Cadastrar Post</Typography>
       <p>Escreva sobre o que quiser e compartilhe o seu conhecimento!</p>
       <div className='Form'>
         <form>
@@ -68,7 +68,7 @@ const CreatePost = () => {
             fullWidth
             type="text"
             name="text"
-            inputProps={{ style: { backgroundColor:'#3e4444' } }}
+            inputProps={{ style: { backgroundColor: '#3e4444' } }}
             required
             placeholder="Pense num bom título..."
             onChange={(e) => setTitle(e.target.value)}
@@ -79,7 +79,7 @@ const CreatePost = () => {
             fullWidth
             type="text"
             name="image"
-            inputProps={{ style: { backgroundColor:'#3e4444' } }}
+            inputProps={{ style: { backgroundColor: '#3e4444' } }}
             required
             placeholder="Insira uma imagem que representa seu post"
             onChange={(e) => setImage(e.target.value)}
@@ -89,18 +89,18 @@ const CreatePost = () => {
           <TextField
             fullWidth
             name="body"
-            inputProps={{ style: { backgroundColor:'#3e4444' } }}
+            inputProps={{ style: { backgroundColor: '#3e4444' } }}
             required
             placeholder="Insira o conteúdo do post"
             onChange={(e) => setBody(e.target.value)}
             value={body}
-          ></TextField>
+          />
           <Typography>Tags:</Typography>
           <TextField
             fullWidth
             type="text"
             name="tags"
-            inputProps={{ style: { backgroundColor:'#3e4444' } }}
+            inputProps={{ style: { backgroundColor: '#3e4444' } }}
             required
             placeholder="Insira as tags separadas por vírgula"
             onChange={(e) => setTags(e.target.value)}

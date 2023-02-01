@@ -1,7 +1,4 @@
 import React from 'react'
-import ListarJogos from './ListarJogos';
-
-import '../index.css';
 import { Typography } from '@mui/material';
 
 const Zerados = () => {
@@ -14,7 +11,7 @@ const Zerados = () => {
 
   return (
     <div >
-      <Typography gutterBottom sx={{ marginTop: '20px', textAlign:'center' }} variant="h2">Titulo</Typography>
+      <Typography variant="h2">Titulo</Typography>
       Qualquer Coisa
     </div>
   )
