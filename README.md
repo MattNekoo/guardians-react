@@ -11,6 +11,7 @@ npm install react-scripts --force
 
 JSON-SERVE
 npm i json-server
+
 package.json scripts inserir:
     "server": "json-server --watch src/data/db.json --port 8000 --no-cors"
 
